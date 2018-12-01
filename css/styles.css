@@ -1,0 +1,181 @@
+@charset "UTF-8";
+
+/*** Page Structure ***/
+html {
+	background-image:url("../images/bg3.jpg");
+	height:100%;
+}
+
+body {
+	min-width:1000px;
+	width:60%;
+	height:100%;
+	margin:auto;
+	border-radius:10px;
+}
+
+#mainContainer {
+	background-color:black;
+	box-shadow: 0px 0px 20px white;
+	border-radius:10px;
+	margin-top:20px;
+	margin-bottom:20px;
+}
+
+#navcontainer {
+	width:100%;
+	text-align:center;
+	position: absolute;
+	height:0px;
+}
+
+#navContainer a {
+	font-size:3em;
+	color:white;
+	display:block;
+	width:150px;
+	margin:0 auto;
+}
+
+#navContainer {
+	position: absolute;
+	color:white;
+	font-size:3em;
+	left:50%;
+}
+
+#mainArticle {
+	width:100%;
+	float:left;
+	background-color:black;
+	height:900px;
+}
+
+#projectFiveContainer {
+	display:block;
+	width:100%;
+	height:10%;
+	background-color:black;
+	border-radius:10px;
+}
+
+#pageHeaderContainer {
+	display:block;
+	width:100%;
+	height:4em;
+	background-color:black;
+	color:white;
+	border-top: 2px dotted rgba(255,255,255, .5);
+	border-bottom: 2px dotted rgba(255,255,255, .5);
+}
+
+#projectTwoContainer {
+	display:block;
+	width:50%;
+	float:left;
+	background-color:black;
+}
+
+#projectOneContainer {
+	display:block;
+	float:left;
+	background-color:black;
+	color:white;
+	width:50%;
+	margin:auto;
+	font-size:1.4em;
+	height:900px;
+}
+
+
+/*** GIF Style ***/
+#imgToSwap{
+	display:block;
+	width:30%;
+	margin:auto;
+}
+
+
+#projectFive {
+	display:block;
+	width:30%;
+	margin:auto;
+}
+
+/*** Video Style ***/
+#projectFourContainer {
+	width:100%;
+	padding-bottom:10px;
+	padding-top:10px;
+	
+}
+
+#projectFourContainer video {
+	width:95%;
+	display:block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/*** Image Style ***/
+#projectTwo {
+	display:block;
+	width:90%;
+	margin:auto;
+	height:900px;
+	max-width:590px;
+}
+
+/*** Audio Style ***/
+#audioContainer {
+	margin:0 auto;
+	display: table;
+	padding-top:10px;
+}
+
+/*** Text Styles ***/
+#mainHeaderStyle {
+	text-align:center;
+	padding-top:18px;
+	font-size:2.2em;
+	font-family: Lobster;
+	
+}
+
+#projectOneBody {
+	width:90%;
+	margin:auto;
+	font-size:1.23em;
+	padding-top:10px;
+	padding-bottom:10px;
+	overflow:auto;
+	height:880px;
+	padding-right:15px;
+}
+
+#projectOneBody::-webkit-scrollbar {
+	width:10px;
+}
+#projectOneBody::-webkit-scrollbar-track {
+	box-shadow: inset 0 0 5px white;
+	border-radius:10px;
+}
+#projectOneBody::-webkit-scrollbar-thumb {
+	background:white;
+	border-radius:10px;
+}
+
+#moonQuote {
+	font-family:'Tw Cen MT', 'Nunito', sans-serif;
+	text-align:center;
+}
+
+.selectiveFutura {
+	font-family:'Tw Cen MT', 'Nunito', sans-serif;
+}
+
+#copyrightContainer {
+	text-align:center;
+	color:white;
+	margin-bottom:10px;
+}

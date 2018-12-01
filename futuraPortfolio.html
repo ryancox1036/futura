@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en-US">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="author" content="Ryan Cox">
+      <meta name="keywords" content="multimedia, web media, animation, typography, font, infographic, futura">
+      <meta name="description" content="A multimedia font story portolio.">
+      <title>Futura Vs Fuhrer</title>
+      <link href="https://fonts.googleapis.com/css?family=UnifrakturMaguntia" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+      <link href="css/reset.css" type="text/css" rel="stylesheet">
+      <link href="css/styles.css" type="text/css" rel="stylesheet">
+      <!--
+         OC CIS 155 Web Development I, CIS 156 Web Multimedia
+         Portfolio Website 
+         
+         Author:     Ryan Cox
+         Professor:  Amelia Garripoli
+         Date:       11/30/2018
+         
+         Filename: futuraPortfolio.html
+         Supporting files:   CSS: 	reset.css, styles.css,
+         					IMAGES: bg3.jpg, poster.png, project2.jpg, projectFiveOff.png, ProjectFiveOnce.gif
+         					VIDEO: project4.mp4, project4.webm
+         					AUDIO: project3.mp3, project3.ogg
+         					PAGES:  futuraPortfolio.html
+          -->
+      <!-- JavaScript for Rocket Launch GIF on Mouseover -->
+      <!-- Special thanks to dougv for his Javascript GIF mouseover tutorial https://www.dougv.com/2007/08/swapping-an-image-from-a-non-animated-gif-to-an-animated-gif-via-javascript-dom/ -->
+      <!-- Special thanks to NetNinja for his tutorial video https://www.youtube.com/watch?v=Gd0RBdFRvF0 -->
+      <script>
+         alert("\n               Commencing countdown,\n               Engines on (five, four, three) \n               Mouseover rocket for blastoff!");
+          
+      </script>
+      <script>
+         function swapImage(imgID, imgSrc) {
+         	var theImage = document.getElementById(imgID)
+         	theImage.src = imgSrc;
+         }
+         
+         function preLoadImages() {
+         	for(var i = 0; i < arguments.length; i++) {
+         		var tmpImage = new Image();
+         		tmpImage.src = arguments[i];
+         	}
+         }
+          
+      </script>
+   </head>
+   <body onload="preLoadImages('images/projectFiveOnce.gif');">
+      <section id="mainContainer">
+         <div id="projectFiveContainer">
+            <img id="imgToSwap" src="images/projectFiveOff.png" alt="Rocket Ready" onmouseover="swapImage('imgToSwap', 'images/projectFiveOnce.gif');" />
+         </div>
+         <div id="pageHeaderContainer">
+            <p id="mainHeaderStyle">A Multimedia Font Creation Story</p>
+         </div>
+         <div id="projectFourContainer">
+            <video controls="controls" poster="images/poster.png">
+               <source src="video/project4.webm" type="video/mp4">
+               <source src="video/project4.mp4" type="video/mp4">
+            </video>
+         </div>
+         <article id="mainArticle">
+            <div id="projectTwoContainer">
+               <img id="projectTwo" title="Futura Infographic" src="images/project2.jpg" />
+            </div>
+            <div id="projectOneContainer">
+               <div id="projectOneBody">
+                  <div id="audioContainer">
+                     <audio controls="controls">
+                        <source src="audio/project3.ogg" type="audio/ogg">
+                        <source src="audio/project3.mp3" type="audio/ogg">
+                        Your browser does not support the audio element.
+                     </audio>
+                  </div>
+                  <br>
+                  <p style="text-indent: 40px">
+                     You’ve heard of Helvetica, Times, and plenty others, but how many of these fonts fought Nazis?
+                     <span class="selectiveFutura">Futura</span> was released in Germany
+                     in 1927. Five years later the typeface and its designer Paul Renner took an early and literal stand
+                     against the Third Reich in their 1932 booklet <em>Kulturbolschewismus</em>. A year later in 1933 the
+                     National Socialists seized control of Germany and Renner was denounced as an intellectually subversive,
+                     nationally untrustworthy 
+                     ‘<span style="font-family:'Old English Text MT','UnifrakturMaguntia', serif;">Cultural Bolshevist</span>’.
+                     Within months he was arrested, dismissed from his position as an educator, and forbidden from returning to any
+                     regular form of work. Humiliated by this cultural exile, Renner survived by refocusing his efforts
+                     towards typography. Two years after the 1939 publication of his book, <em>Die Kunst der Typographie</em>
+                     (<span class="selectiveFutura">The Art of Typography</span>), the Nazis,
+                     along with much of the world, were printing in <span class="selectiveFutura">Futura</span>.
+                  </p>
+                  <br>
+                  <p style="text-indent: 40px">
+                     Decades later, Futura’s popularity soared to cosmic heights. In July of 1969, the Apollo 11
+                     Lunar Landing Mission put Neil Armstrong and Edwin “Buzz” Aldrin on the moon. The plaque on the
+                     front landing gear of their lunar module read<br>
+                     <br>
+                  <p id="moonQuote">HERE MEN FROM THE PLANET EARTH<br>
+                     FIRST SET FOOT UPON THE MOON<br>
+                     JULY 1969, A.D. <br>
+                     WE CAME IN PEACE FOR ALL MANKIND<br><br>
+                     It was printed in Futura.
+                  </p>
+                  <br>
+                  <p style="text-indent: 40px">
+                     To this day, from 
+                     <span class="selectiveFutura">Avon</span>
+                     to 
+                     <span class="selectiveFutura">Alfa Romeo</span>
+                     and 
+                     <span class="selectiveFutura">Absolut Vodka</span>
+                     to 
+                     <span class="selectiveFutura">Volkswagen</span>, 
+                     <span class="selectiveFutura">Futura</span>
+                     remains iconic
+                     and is among the most used commercial typefaces. With its nondecorative, geometric sans-serif
+                     styling and sharp extended points, it can be used for headlines and body text alike, making it
+                     a highly versatile typeface. From its bold beginning standing against Nazism, all the way to
+                     the freaking moon and back, 
+                     <span class="selectiveFutura">Futura</span>
+                     presses forward.
+                  </p>
+               </div>
+            </div>
+         </article>
+         <div id="copyrightContainer">
+            © 2018 Ryan Cox. All Rights Reserved
+         </div>
+      </section>
+   </body>
+</html>
